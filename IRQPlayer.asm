@@ -146,9 +146,9 @@ attack:
 
     VERA_SET_4X VOICE10VOL,1
 
-	stz volumeLo
+	stz volumeLo,x
     lda volume_setting,x
-	sta volumeHi
+	sta volumeHi,x
 	ora LR_setting,x
     sta VERA_DATA0						; max volume at the end of Attack phase
 
